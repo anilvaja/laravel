@@ -8,7 +8,7 @@
             <ul class="nav" role="tablist">
                 <li role="presentation">
             @foreach ($menu_item as $item)
-                    <a href="{{ url('/$item->url') }}">{{$item->title}} </a>
+                    <a href="{{ url($item->url) }}">{{$item->title}} </a>
                 <br/>
             @endforeach
                 </li>

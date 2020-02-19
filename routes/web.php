@@ -19,3 +19,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('admin/user-types', 'Admin\\UserTypesController');
 Route::resource('admin/navigation', 'Admin\\NavigationController');
+Route::resource('admin/imp-links', 'Admin\\ImpLinksController');

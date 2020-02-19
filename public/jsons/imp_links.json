@@ -1,0 +1,32 @@
+{
+    "fields": [
+        {
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "link",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "select",
+            "options": {
+                "1": "Active",
+                "2": "Inactive",
+                "0": "Deleted"
+            }
+     
+      }
+    ],
+    "validations": [
+        {
+            "field": "title",
+            "rules": "required|max:50"
+        },
+        {
+            "field": "link",
+            "rules": "required|max:1000"
+        }
+    ]
+}

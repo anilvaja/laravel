@@ -1,3 +1,4 @@
 php artisan crud:generate UserTypes --fields_from_file="public/jsons/user_types.json" --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html --indexes="user_type#uniqueue"
 php artisan crud:generate Navigation --fields_from_file="public/jsons/navigations.json" --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html
+php artisan crud:generate ImpLinks --fields_from_file="public/jsons/imp_links.json" --view-path=admin --controller-namespace=Admin --route-group=admin --form-helper=html
 
