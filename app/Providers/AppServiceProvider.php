@@ -2,6 +2,9 @@
 
 namespace App\Providers;
 
+use App\Navigation;
+use View;
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -23,6 +26,14 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+
+        Schema::defaultStringLength(191);
+        View::composer('*', function($view)
+        {
+            $menu_item= Navigation::all();
+            $view->with('menu_item', $menu_item);
+
+
+        });
     }
 }
